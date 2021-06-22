@@ -4,10 +4,10 @@
       <div class="greeting">
         <a>こんにちは、</a><%= link_to current_user.name + "さん", user_path(current_user), class: :greeting__link %>
       </div>
+    <% end %>  
       <div class="card__wrapper">
         <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
         <%= render partial: 'prototype', collection: @prototypes %>
       </div>
-    <% end %>
   </div>
 </main>
